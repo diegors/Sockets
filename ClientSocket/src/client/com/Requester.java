@@ -19,7 +19,7 @@ public class Requester {
 			// out.close();
 			// 1. creating a socket to connect to the server
 			requestSocket = new Socket(param[0], Integer.parseInt(param[1]));
-			System.out.println("Connected Server to" + param[0] + " in port " + param[1]);
+			System.out.println("Connected Server to " + param[0] + " in port " + param[1]);
 			// 2. get Input and Output streams
 			out = new ObjectOutputStream(requestSocket.getOutputStream());
 			out.flush();
